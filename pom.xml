@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xmlns="http://maven.apache.org/POM/4.0.0"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>daybreak.nerfedshield</groupId>
+	<artifactId>NerfedShield</artifactId>
+	<version>${revision}</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>modules/compat/Interfaces</module>
+		<module>modules/compat/v1_9_R2</module>
+		<module>modules/compat/v1_10_R1</module>
+		<module>modules/compat/v1_11_R1</module>
+		<module>modules/compat/v1_12_R1</module>
+		<module>modules/compat/v1_13_R1</module>
+		<module>modules/compat/v1_13_R2</module>
+		<module>modules/compat/v1_14_R1</module>
+		<module>modules/compat/v1_15_R1</module>
+		<module>modules/compat/v1_16_R1</module>
+		<module>modules/Plugin</module>
+	</modules>
+
+	<properties>
+		<encoding>UTF-8</encoding>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<revision>1.0.0</revision>
+		<bukkit-api.version>1.15.2-R0.1-SNAPSHOT</bukkit-api.version>
+	</properties>
+
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<configuration>
+						<archive>
+							<addMavenDescriptor>false</addMavenDescriptor>
+							<manifest>
+								<addClasspath>false</addClasspath>
+							</manifest>
+						</archive>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>

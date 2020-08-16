@@ -1,0 +1,7 @@
+name: NerfedShield
+main: daybreak.nerfedshield.NerfedShield
+version: ${project.version}
+
+commands:
+  nerfedshield:
+    aliases: [ns, shield]
