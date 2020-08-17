@@ -41,7 +41,6 @@ public class NerfedShield extends JavaPlugin implements Listener {
 		try {
 			nms = Class.forName("daybreak.nerfedshield.compat." + ServerVersion.INSTANCE.name() + ".NMSImpl").asSubclass(INMS.class).getConstructor().newInstance();
 		} catch (Exception e) {
-			e.printStackTrace();
 			nms = null;
 		}
 		NerfedShield.nms = nms;

@@ -3,7 +3,6 @@ package daybreak.nerfedshield.compat.version;
 public enum NMSVersion {
 
 	UNSUPPORTED(-1, -1),
-	v1_9_R1(9, 1),
 	v1_9_R2(9, 2),
 	v1_10_R1(10, 1),
 	v1_11_R1(11, 1),
