@@ -11,7 +11,8 @@ public enum NMSVersion {
 	v1_13_R2(13, 2),
 	v1_14_R1(14, 1),
 	v1_15_R1(15, 1),
-	v1_16_R1(16, 1);
+	v1_16_R1(16, 1),
+	v1_16_R2(16, 2);
 
 	public final int version;
 	public final int release;
