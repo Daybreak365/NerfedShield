@@ -30,24 +30,6 @@
 		</dependency>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>v1_9_R2</artifactId>
-			<version>${revision}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>v1_10_R1</artifactId>
-			<version>${revision}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>v1_11_R1</artifactId>
-			<version>${revision}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
 			<artifactId>v1_12_R1</artifactId>
 			<version>${revision}</version>
 			<scope>compile</scope>
@@ -85,6 +67,12 @@
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>v1_16_R2</artifactId>
+			<version>${revision}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>v1_19_R1</artifactId>
 			<version>${revision}</version>
 			<scope>compile</scope>
 		</dependency>
