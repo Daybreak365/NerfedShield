@@ -8,7 +8,6 @@ import daybreak.nerfedshield.config.Configuration.Settings;
 import daybreak.nerfedshield.config.wizard.ConfigWizard;
 import daybreak.nerfedshield.event.ShieldCooldownEvent;
 import daybreak.nerfedshield.event.ShieldCooldownEvent.CooldownType;
-import java.io.IOException;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
@@ -29,6 +28,8 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.io.IOException;
+
 public class NerfedShield extends JavaPlugin implements Listener {
 
 	public static final String prefix = "§aNerfedShield §2》§f";
@@ -41,6 +42,7 @@ public class NerfedShield extends JavaPlugin implements Listener {
 		try {
 			nms = Class.forName("daybreak.nerfedshield.compat." + ServerVersion.INSTANCE.name() + ".NMSImpl").asSubclass(INMS.class).getConstructor().newInstance();
 		} catch (Exception e) {
+            e.printStackTrace();
 			nms = null;
 		}
 		NerfedShield.nms = nms;

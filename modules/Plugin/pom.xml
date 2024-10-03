@@ -72,6 +72,12 @@
 		</dependency>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
+			<artifactId>v1_18_R2</artifactId>
+			<version>${revision}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>v1_19_R1</artifactId>
 			<version>${revision}</version>
 			<scope>compile</scope>
